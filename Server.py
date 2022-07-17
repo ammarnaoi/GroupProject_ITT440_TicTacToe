@@ -19,15 +19,12 @@ def start_server():
     ServerSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     print("Socket Deployed")
 
-
-    # Binding
     try:
         ServerSocket.bind((host, port))
     except socket.error as e:
         print("Bind failed. Error : " + str(e))
         sys.exit()
 
-    # Listening
     ServerSocket.listen(5)
     print("Socket now receiving")
 
