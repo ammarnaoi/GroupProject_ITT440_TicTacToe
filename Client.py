@@ -2,7 +2,6 @@ import socket
 import sys
 import os
 
-# Client Initialization 
 host = '192.168.0.66'
 port = 8888
 os.system('clear')
@@ -15,7 +14,7 @@ except socket.error as e:
     print("Connection error")
     sys.exit()
  
-print("\n===============================")
+print("\n------------------------------")
 print("Do you want to play? Yes or No")
 while True:
     message = input(' -> ').strip()
@@ -47,7 +46,7 @@ while message.lower().strip() != 'No':
     print(data)
 
 	
-    print("\n===============================")
+    print("\n-----------------------------------")
     print("Do you want to play again? Yes or No")
     message = input(" -> ")
 	
